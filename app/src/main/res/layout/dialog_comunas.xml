@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetContainerLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bordelogin"
+    android:backgroundTint="@color/fondo"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:id="@+id/linearLayout7"
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:layout_margin="20dp"
+       android:background="@drawable/mapas"
+       android:orientation="vertical"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/btnChange"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginEnd="20dp"
+       android:background="@drawable/background_red"
+       android:backgroundTint="#fff"
+       android:clickable="true"
+       android:layout_marginBottom="50dp"
+       android:foreground="?android:attr/selectableItemBackground"
+       android:gravity="center"
+       android:orientation="horizontal"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+       app:layout_constraintVertical_bias="0.076">
+
+
+      <TextView
+          android:id="@+id/cambia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/alata"
+          android:text="BUSCAR"
+          android:textColor="@color/colorPrimary"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/comprador"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/alata"
+          android:text=" TRASPORTISTA"
+          android:textColor="#98D42D"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+
+   </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl32"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="-20dp"
+        android:onClick="atrasLogin"
+        android:padding="15dp"
+        android:src="@drawable/atras_icon"
+        app:layout_constraintBottom_toTopOf="@+id/gl2"
+        app:layout_constraintEnd_toStartOf="@+id/glLeft"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/Jobsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="JOBSI"
+        android:textColor="#62C355"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/gl1"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toTopOf="@id/gl0"
+        app:layout_constraintVertical_bias="1" />
+
+    <TextView
+        android:id="@+id/Mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="¡Nos alegra verte de vuelta!"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/gl2"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toBottomOf="@id/gl1"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/ivGarden"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/gl32"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toTopOf="@id/gl2"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_garden" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/main_email_hint"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/gl4"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toTopOf="@id/gl32"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_custom"
+        android:backgroundTint="#329F40"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/alata"
+        android:hint="ejemplo@mail.com"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:textColor="#FFF"
+        android:textColorHint="#62C355"
+        app:layout_constraintBottom_toBottomOf="@id/gl5"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toBottomOf="@id/gl4"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/main_password_hint"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/gl6"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toBottomOf="@id/gl5"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_custom"
+        android:backgroundTint="#329F40"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/alata"
+        android:hint="***********"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:textColor="#FFF"
+        android:textColorHint="#62C355"
+        app:layout_constraintBottom_toBottomOf="@id/gl7"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toBottomOf="@id/gl6"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="RtlSymmetry" />
+
+    <com.royrodriguez.transitionbutton.TransitionButton
+        android:id="@+id/transition_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/main_button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:defaultColor="#00000000"
+        app:layout_constraintBottom_toBottomOf="@id/gl8"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toTopOf="@+id/gl7"
+        app:layout_constraintVertical_bias="0.5"
+        app:loaderColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/ivFingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00000000"
+        app:layout_constraintBottom_toBottomOf="@id/gl9"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toTopOf="@id/gl8"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_baseline_fingerprint_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:text="@string/version"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/gl10"
+        app:layout_constraintEnd_toEndOf="@id/glRight"
+        app:layout_constraintStart_toStartOf="@id/glLeft"
+        app:layout_constraintTop_toTopOf="@id/gl9"
+        app:layout_constraintVertical_bias="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

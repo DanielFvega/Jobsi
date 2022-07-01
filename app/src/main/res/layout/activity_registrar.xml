@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/derecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/izquierda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/liena1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linea2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linea3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linea33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-20dp"
+        android:onClick="DiaologoComunas"
+        android:src="@drawable/informacion_icon"
+        app:layout_constraintBottom_toTopOf="@+id/linea2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/izquierda"
+        app:layout_constraintTop_toTopOf="@+id/liena1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/atrasRegistro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="-20dp"
+        android:onClick="atrasRegistro"
+        android:padding="5dp"
+        android:src="@drawable/atras_icon"
+        app:layout_constraintBottom_toTopOf="@+id/linea2"
+        app:layout_constraintEnd_toStartOf="@+id/derecha"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/liena1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Registerlinear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordelogin"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linea3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/derecha2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/izquierd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/izquierda2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.62" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea92"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.71" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea93"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea94"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.49" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.58" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/pala_vector"
+            app:layout_constraintBottom_toTopOf="@+id/linea5"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintStart_toStartOf="@+id/derecha2"
+            app:layout_constraintTop_toTopOf="@+id/linea4"
+            app:layout_constraintVertical_bias="0.441">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Hola"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/alata"
+            android:gravity="bottom"
+            android:text="HOLA"
+            android:textColor="@color/grisOscuro"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linea5"
+            app:layout_constraintEnd_toStartOf="@+id/derecha2"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea4" />
+
+        <TextView
+            android:id="@+id/Holatexto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/alata"
+            android:gravity="bottom"
+            android:text="COMPLETA LA SIGUIETE INFORMACIÓN"
+            android:textColor="@color/grisOscuro"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linea5"
+            app:layout_constraintEnd_toStartOf="@+id/derecha2"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea4"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/main_name_hint"
+            android:textColor="@color/grisOscuro"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linea7"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvEmail2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/main_cedula_hint"
+            android:paddingTop="2dp"
+            android:textColor="@color/grisOscuro"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linea10"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea8"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvEmail3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/alata"
+            android:paddingTop="2dp"
+            android:text="@string/main_email_hint"
+            android:textColor="@color/grisOscuro"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linea9"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea11"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvContrasena"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/alata"
+            android:paddingTop="2dp"
+            android:text="@string/main_password_hint"
+            android:textColor="@color/grisOscuro"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linea93"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea92" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text_custom"
+            android:backgroundTint="#ECECEC"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/alata"
+            android:hint="ejemplo@mail.com"
+            android:imeOptions="actionNext"
+            android:paddingStart="16dp"
+            android:textColor="#FFF"
+            android:textColorHint="#BAB9B9"
+            app:layout_constraintBottom_toTopOf="@+id/linea8"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea7"
+            tools:ignore="RtlSymmetry" />
+
+
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text_custom"
+            android:backgroundTint="#ECECEC"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/alata"
+            android:hint="1234567890"
+            android:imeOptions="actionNext"
+            android:paddingStart="16dp"
+            android:textColor="#FFF"
+
+            android:textColorHint="#BAB9B9"
+            app:layout_constraintBottom_toTopOf="@+id/linea11"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toTopOf="@+id/linea10"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etcorreo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text_custom"
+            android:backgroundTint="#ECECEC"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/alata"
+            android:hint="1234567890"
+            android:imeOptions="actionNext"
+            android:paddingStart="16dp"
+            android:textColor="#FFF"
+            android:textColorHint="#BAB9B9"
+            app:layout_constraintBottom_toTopOf="@+id/linea92"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail3"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etcontrasena"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text_custom"
+            android:backgroundTint="#ECECEC"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/alata"
+            android:hint="1234567890"
+            android:imeOptions="actionNext"
+            android:paddingStart="16dp"
+            android:textColor="#FFF"
+            android:textColorHint="#BAB9B9"
+            app:layout_constraintBottom_toTopOf="@+id/linea94"
+            app:layout_constraintEnd_toStartOf="@+id/izquierda2"
+            app:layout_constraintStart_toStartOf="@+id/izquierd3"
+            app:layout_constraintTop_toBottomOf="@+id/tvContrasena"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circulo"
+        android:padding="10dp"
+        android:src="@drawable/icon_check_login"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/check2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circulo"
+        android:backgroundTint="#FFFFFF"
+        android:padding="10dp"
+        android:src="@drawable/icon_check_login2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/Comunalistener"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_red"
+        android:backgroundTint="#FFFFFF"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/linea33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linea2">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea1Comuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea2Comuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea3Comuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.58" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea4Comuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea5Comuna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea6Comuna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.32" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea7Comuna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.42" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea8Comuna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.54" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea9Comuna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea10Comuna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comunas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circulo"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linea6Comuna"
+            app:layout_constraintEnd_toStartOf="@+id/linea2Comuna"
+            app:layout_constraintStart_toStartOf="@+id/linea1Comuna"
+            app:layout_constraintTop_toTopOf="@+id/linea5Comuna">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:fontFamily="@font/alata"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circulo"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linea7Comuna"
+            app:layout_constraintEnd_toStartOf="@+id/linea3Comuna"
+            app:layout_constraintStart_toStartOf="@+id/linea2Comuna"
+            app:layout_constraintTop_toTopOf="@+id/linea6Comuna">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:fontFamily="@font/alata"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circulo"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linea9Comuna"
+            app:layout_constraintEnd_toStartOf="@+id/linea3Comuna"
+            app:layout_constraintStart_toStartOf="@+id/linea2Comuna"
+            app:layout_constraintTop_toTopOf="@+id/linea8Comuna">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:fontFamily="@font/alata"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circulo"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linea8Comuna"
+            app:layout_constraintEnd_toStartOf="@+id/linea4Comuna"
+            app:layout_constraintStart_toStartOf="@+id/linea3Comuna"
+            app:layout_constraintTop_toTopOf="@+id/linea7Comuna">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:fontFamily="@font/alata"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circulo"
+            app:layout_constraintBottom_toTopOf="@+id/linea10Comuna"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.345"
+            app:layout_constraintStart_toStartOf="@+id/linea3Comuna"
+            app:layout_constraintTop_toTopOf="@+id/linea8Comuna"
+            app:layout_constraintVertical_bias="0.688">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:fontFamily="@font/alata"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circulo"
+            app:layout_constraintBottom_toTopOf="@+id/linea10Comuna"
+            app:layout_constraintEnd_toStartOf="@+id/linea3Comuna"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/linea2Comuna"
+            app:layout_constraintTop_toTopOf="@+id/linea9Comuna"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:fontFamily="@font/alata"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/regresar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:fontFamily="@font/alata"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Regresar"
+            android:textColor="#989898"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linea5Comuna"
+            app:layout_constraintEnd_toStartOf="@+id/linea2Comuna"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

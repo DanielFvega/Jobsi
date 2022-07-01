@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jobsi</string>
+    <string name="main_title">Transition Button</string>
+    <string name="main_button">Iniciar Sesión</string>
+    <string name="main_email_hint">CORREO</string>
+    <string name="main_name_hint">NOMBRE COMPLETO</string>
+    <string name="main_cedula_hint">CEDULA</string>
+    <string name="main_password_hint">CONTRASEÑA</string>
+    <string name="version">Versión 1.3</string>
+    <string name="papa_descripcion">El ciclo de cultivo de la papa desde que se siembra hasta que está lista para cosechar es variable en función de muchos factores, algunos propios de la variedad seleccionada y otros relacionados con las condiciones de la zona de cultivo y de la meteorología.</string>
+    <string name="papa_descripcion2">La mayoría de las papas están listas para la cosecha entre 80-115 días después de la siembra. Para la cosecha, excave cuidadosamente los tubérculos de las papas y sepárelos de las raíces de la planta.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
