@@ -4,6 +4,7 @@ Idea App para cultivos Hidropónicos.
 - Actalizaciones en curso 
 °Integración con Firebase
 °MVP 
+°Pantalla de vendedor aun en proceso
 
 ![1](https://user-images.githubusercontent.com/88461448/176967734-1b02b18b-e12f-4fc9-89d3-bff54662cdb7.png)
 ![2](https://user-images.githubusercontent.com/88461448/176967738-d80de6fe-f74f-4170-9396-23c664c48fe5.png)
